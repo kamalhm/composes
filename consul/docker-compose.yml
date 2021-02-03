@@ -1,0 +1,13 @@
+version: '2'
+
+services:
+  consul:
+    image: bitnami/consul:latest
+    ports:
+      - '8500:8500'
+    volumes:
+      - ./consul_data:/bitnami
+
+volumes:
+  redis_data:
+    driver: local

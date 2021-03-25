@@ -1,5 +1,4 @@
-version: '2'
-
+version: '3.8'
 services:
   consul:
     image: bitnami/consul:latest
@@ -7,7 +6,3 @@ services:
       - '8500:8500'
     volumes:
       - ./consul_data:/bitnami
-
-volumes:
-  redis_data:
-    driver: local

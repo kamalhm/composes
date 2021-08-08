@@ -1,7 +1,6 @@
-version: '3.8'
 services:
   redis:
-    image: bitnami/redis:latest
+    image: bitnami/redis:6.2.5
     environment:
       - ALLOW_EMPTY_PASSWORD=yes
       - REDIS_DISABLE_COMMANDS=FLUSHDB,FLUSHALL

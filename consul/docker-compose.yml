@@ -1,6 +1,6 @@
 services:
   consul:
-    image: bitnami/consul:latest
+    image: bitnami/consul:1
     ports:
       - '8500:8500'
     volumes:

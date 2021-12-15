@@ -8,3 +8,4 @@ services:
     environment: 
       - MONGODB_USERNAME=mongo
       - MONGODB_PASSWORD=mongo
+      - MONGODB_ROOT_PASSWORD=mongo

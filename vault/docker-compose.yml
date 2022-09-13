@@ -2,9 +2,6 @@ services:
     vault:
         image: hashicorp/vault:1.8.2
         restart: always
-        # volumes:
-        #   - /vault/data
-        #   - /etc/vault/logs
         ports:
           - "8200:8200"
         environment:

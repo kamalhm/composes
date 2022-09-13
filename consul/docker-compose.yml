@@ -3,5 +3,3 @@ services:
     image: bitnami/consul:1
     ports:
       - '8500:8500'
-    volumes:
-      - ./consul_data:/bitnami

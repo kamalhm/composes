@@ -6,8 +6,6 @@ services:
       - '5672:5672'
       - '25672:25672'
       - '15672:15672'
-    volumes:
-      - ./rabbitmq_data:/bitnami/rabbitmq
     environment: 
       - RABBITMQ_USERNAME=mq
       - RABBITMQ_PASSWORD=mq

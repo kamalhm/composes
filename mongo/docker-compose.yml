@@ -3,9 +3,6 @@ services:
     image: bitnami/mongodb:4.4
     ports:
       - "27017:27017"
-    volumes:
-      - ./mongodb_data:/bitnami
-    environment: 
-      - MONGODB_USERNAME=mongo
-      - MONGODB_PASSWORD=mongo
-      - MONGODB_ROOT_PASSWORD=mongo
+    environment:
+      - ALLOW_EMPTY_PASSWORD=yes
+      - MONGODB_DATABASE=mongo
